@@ -1,7 +1,6 @@
-![image](https://github.com/stasevds/rsschool-cv/blob/gh-pages/%D0%BC%D0%BE%D1%91%20%D0%BB%D0%B8%D1%86%D0%BE.jpg?raw=true)
+![image](https://github.com/stasevds/rsschool-cv/blob/rsschool-cv-html/%D0%BC%D0%BE%D1%91%20%D0%BB%D0%B8%D1%86%D0%BE.jpg?raw=true)
 # **Staseu Dzmitriy** 
-
-### **Contakts: ** 
+### **Contakts:**
 
 * **Address:** Belarus, the city of Gomel  
 

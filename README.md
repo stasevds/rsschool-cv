@@ -1,1 +1,1 @@
-# rsschool-cv
+https://stasevds.github.io/rsschool-cv/cv

@@ -69,11 +69,11 @@ body{
   }
 }
   .section-profile-logo {
-    width: 200px;
-    height: 200px;
+    width: 230px;
+    height: 300px;
     object-fit: cover;
-    border-radius: 25%;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+    border-radius: 20%;
+    box-shadow: 0 0px 18px rgb(0 0 0 / 77%);
     filter: grayscale(0.2) brightness(1.05);
     transition: .3s;
   }
@@ -192,8 +192,10 @@ body{
     list-style:disc;
 }
 .footer {
-  background-color: #829985;
-  padding: 20px;  
+  border: 2px solid brown;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: moccasin; 
 }
 
 .footer-container {
@@ -212,7 +214,7 @@ body{
 .rss {
   width: 121px;
   height: 45px;
-  background-image: url("./rs-school.png");
+  background-image: url("./asset/img/rs-school.png");
   background-size: contain;
   background-repeat: no-repeat;
 }

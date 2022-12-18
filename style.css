@@ -1,0 +1,255 @@
+*{
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth; 
+  }
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+ background-color: white;
+ color: rgb(0, 0, 0) ;
+}
+.header{
+    max-width: 1440px;
+    margin: 5px;
+    min-height: 50px;
+}
+
+.nav-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    border: 2px solid brown;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: moccasin;
+}
+.nav-link{
+    text-decoration: none;
+    color: blue;
+    line-height: 1.2;
+    position: relative;
+    padding: 0 8px;
+    text-transform: uppercase;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  bottom: -5px;
+  width: calc(100% - 24px);
+  height: 2px;
+  background-color: #fff;
+  opacity: 0;
+  transition: .5s;
+}
+ .nav-link:hover::after {
+  opacity: 1;
+  animation-name: slidein;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+ @keyframes slidein {
+  from {
+    width: 0;
+  }
+  to {
+    width: calc(100% - 24px);
+  }
+}
+  .section-profile-logo {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 25%;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+    filter: grayscale(0.2) brightness(1.05);
+    transition: .3s;
+  }
+   .section-profile-logo:hover {
+    filter: none;
+  }
+   .section.section-profile {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 50px 30px 35px;
+    border-bottom: 15px solid #d7d1c9;
+  }
+  .section-profile-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;  
+    text-transform: uppercase;
+  }
+  .section-title.main-title {
+    position: relative;
+    padding: 0;
+    margin-bottom: 10px;
+    color: #4d2323;
+    font-size: 32px;
+    font-weight: 300;
+    letter-spacing: 10px;
+    line-height: 50px;
+    word-spacing: 3px;
+  }
+    .main-title::after {
+    content: "";
+    position: absolute;
+    bottom: -19px;
+    left: 50%;
+    margin-left: -70px;
+    width: 140px;
+    height: 2px;
+    background-color: #829985;
+  }
+   .section-subtitle {
+    margin-top: 10px;
+    color: #5c5c5c;
+    line-height: 50px;
+    font-weight: 300;
+    letter-spacing: 2px;
+  }
+  .main{
+    margin: 0;
+  }
+  .main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .section {
+    width: calc(50% - 20px);
+    padding: 10px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #672f2f;
+  }
+  .section-title {
+    margin-bottom: 20px;  
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #829985;
+  }
+  .section-list {
+    margin: 0;
+    padding: 0;  
+  }
+  .section-item {
+    position: relative;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    list-style: none;
+  }
+  .section-item .contacts{
+    text-decoration: none;
+    color: blue;
+    line-height: 1.2;
+    position: relative;
+  }
+  .pre {
+    padding: 0;
+    margin: 0;
+  }
+.section-education,
+.section-english {
+  border-bottom: 0;
+}
+.section-item.english{
+    position: relative;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    list-style: inherit;
+}
+.section-item.projects a{
+    position: relative;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    text-decoration: none;
+}
+.section-item.projects{
+    position: relative;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    list-style:disc;
+}
+.footer {
+  background-color: #829985;
+  padding: 20px;  
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  color: #fff;
+}
+.github {
+  color: #fff;
+  text-decoration: none;
+  line-height: 45px;
+}
+
+.rss {
+  width: 121px;
+  height: 45px;
+  background-image: url("./rs-school.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 1440px) {
+  .header {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .section {
+    width: 100%;
+  }
+  .section-profile {
+    flex-direction: column;
+    align-items: center;
+  }  
+  .section-education {
+    border-bottom: 1px solid #672f2f;
+  }
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-list {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .nav-item {
+    margin: 2px 0;
+  }
+}
+
+@media (max-width: 500px) {
+    .nav-list {
+      flex-direction: column;
+      align-items: center;
+    }
+}

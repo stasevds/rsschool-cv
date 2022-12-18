@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>          
+                <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
+            </ul>
+          </nav>
+    </header>
+    <main class="main">
+      <div class="main-container">
+        <section class="section section-profile" id="profile">
+            <img src="./photo.jpg" alt="my photo" class="section-profile-logo">
+          <div class="section-profile-title">
+            <h1 class="section-title main-title">Staseu Dzmitriy</h1>
+            <h3 class="section-subtitle">Junior Front-End Developer</h3>
+          </div> 
+        </section>
+        <section class="section" id="contacts">
+            <h2 class="section-title">Contacts</h2>
+            <ul class="section-list">
+              <li class="section-item">
+                  Belarus, Gomel
+              </li>
+              <li class="section-item">
+                Email: <a href="staseffds@gmail.com" class="section-item contacts" title="email">staseffds@gmail.com</a>
+              </li>
+              <li class="section-item">
+                Github: <a href="https://github.com/stasevds" class="section-item contacts" title="github">stasevds</a>
+              </li>
+              <li class="section-item">
+                Telegram: <a href="https://t.me/stasevds" class="section-item contacts" title="github">@stasevds</a>
+              </li>  
+            </ul>            
+        </section>
+        <section class="section" id="summary">
+            <h2 class="section-title">Summary</h2>
+            <p>
+              I am 28 years old and I work as a process engineer. Recently I have become very interested in web development, because this profession provides endless opportunities for professional growth.My goal is to gain knowledge in the field of Front -end development, which will be enough for employment in the company.
+            </p>
+        </section>
+        <section class="section" id="skills">
+            <h2 class="section-title">Skills</h2>
+            <ul class="section-list">
+              <li class="section-item">
+                <span> HTML</span>
+              </li>
+              <li class="section-item">
+                <span> CSS/SASS</span>
+              </li>
+              <li class="section-item">
+                <span> The basics Java Script</span>
+              </li>
+              <li class="section-item">
+                <span> Git/ GitHub</span>
+              </li>
+            </ul>
+        </section>
+        <section class="section" id="code">
+            <h2 class="section-title">Code</h2>
+<pre class="pre"><code>"use strict";  
+let age = prompt('Age?', 18);  
+let message = (age &lt; 3) ?'Hi,baby!:  
+(age &lt; 18) ? 'Hi!' :  
+(age &lt; 100) ? 'Hello!' :  
+'What an unusual age!';  
+alert( message );</code></pre>  
+        </section>
+        <section class="section" id="courses">
+            <h2 class="section-title">Courses</h2>
+            <ul class="section-list">
+              <li class="section-item">
+                <span> CS 50 Video Course;</span>
+              </li>
+              <li class="section-item">
+                Video courses JS, CSS, HTML, Git on You Tube<span> -ItProger school channel;</span>
+              </li>
+              <li class="section-item">
+                Java Script Guide:<a href="https://learn.javascript.ru/" class="section-item contacts" title="JS">https://learn.javascript.ru/</a>
+              </li>
+              <li class="section-item">
+                RS School JS/Front<span> -End course. Stage 0 (in progress)</span>
+              </li>
+            </ul>
+        </section>
+        <section class="section" id="projects">
+            <h2 class="section-title">Projects</h2>
+            <ul class="section-list">
+              <li class="section-item projects">
+                <a href="https://stasevds.github.io/rsschool-cv/cv" class="section-item projects a">CV</a>
+              </li>
+            </ul>           
+        </section>    
+        <section class="section section-education" id="education">
+            <h2 class="section-title">Education</h2>
+            <p>Gomel State Technical University named after P.O.Sukhoi</p>
+            <p>Specialty: mechanical engineering technology</p>     
+        </section>
+        <section class="section section-english" id="english">
+            <h2 class="section-title">English</h2>
+            <ul class="section-list">
+              <li class="section-item english">
+                <span> Native Russian speaker</span>
+              </li>
+              <li class="section-item english">
+                <span> English - A1 (A2 in progress)</span>
+              </li>
+             </ul>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container footer-container">
+        <div>© 2022 <a href="https://github.com/stasevds" class="github nav-link">stasevds</a></div>
+        <a href="https://rs.school/js/" class="rss"></a>
+      </div>
+    </footer>
+</body>
+</html>
